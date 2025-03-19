@@ -5,4 +5,15 @@
 */
 
 // your code
-let sum
+const FIRSTNUMBER=1;
+const LASTNUMBER=20;
+const ITERATIONSTEP=2;
+let counter=FIRSTNUMBER
+let sum=0;
+
+while (counter<=LASTNUMBER) {
+   sum+=counter;
+   counter+=2;
+}
+
+console.log(sum);
