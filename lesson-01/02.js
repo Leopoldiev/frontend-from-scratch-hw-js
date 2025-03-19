@@ -6,4 +6,16 @@
 */
 
 // your code
-let factorial
+const FIRSTNUMBER=1;
+const LASTNUMBER=10;
+let counter=FIRSTNUMBER;
+let factorial=1;
+
+while (counter<=LASTNUMBER)
+{
+   factorial*=counter;
+   counter++;
+}
+
+console.log(factorial);
+
