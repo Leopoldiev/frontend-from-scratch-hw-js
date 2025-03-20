@@ -9,11 +9,10 @@ const FIRSTNUMBER=1;
 const LASTNUMBER=20;
 const ITERATIONSTEP=2;
 let counter=FIRSTNUMBER
-let sum=0;
+//let sum=0;
 
-while (counter<=LASTNUMBER) {
-   sum+=counter;
-   counter+=2;
+let number = 100
+while (number>=50) {
+  console.log(number)
+  number--
 }
-
-console.log(sum);
