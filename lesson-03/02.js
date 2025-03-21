@@ -5,4 +5,3 @@ function isEven(number) {
    return number%2?false:true;
 }
 
-console.log(isEven(7));
