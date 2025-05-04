@@ -35,6 +35,7 @@ let timerId
 startButton.addEventListener('click', () => {
    if (isTimerStarted) return;
    let counter = 3;
+   countdownDisplay.innerText=counter--;
    isTimerStarted = true;
    setTimeout(function tick() {
       if (counter === 0) {
@@ -45,7 +46,7 @@ startButton.addEventListener('click', () => {
       }
       countdownDisplay.innerText = counter--;
       timerId = setTimeout(tick, 1000);
-   }, 0)
+   }, 1000)
 })
 
 cancelButton.addEventListener('click', () => {
