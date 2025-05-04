@@ -73,7 +73,8 @@ let cartPets = document.querySelector(".pet-shop");
 cartPets.addEventListener("click", {
    handleEvent(event) {
       if(cart.length>=3){
-         alert("Вы не можете добавить более 3 питомцев");
+         const mBox=document.getElementById("message-box")
+         mBox.textContent="Вы не можете добавить более 3 питомцев"
          return;
       }
       const pet = PETS.find((item) => item.id === event.target.id)
